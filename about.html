@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frogcoin</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+      .about {
+        background-color: #f8f8f8;
+      }
+      .heading h1 {
+        color: #ff6347;
+        font-size: 55px;
+        text-align: center;
+        margin-top: 35px;
+        animation: fadeInAndScale 1s ease-in-out;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 65px auto;
+      }
+      .about-content {
+        flex: 1;
+        width: 600px;
+        margin: 0px 25px;
+        animation: fadeInUp 2s ease;
+      }
+      .about-content h2 {
+        font-size: 38px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .about-content p {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+        color: #666;
+      }
+      .about-content button {
+        display: inline-block;
+        background-color: #ff4500;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 5px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+      .about-content button:hover {
+        background-color: #ff6347;
+        transform: scale(1.1);
+      }
+      .about-image {
+        flex: 1;
+        width: 600px;
+        margin: auto;
+        animation: fadeInRight 2s ease;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      @media screen and (max-width: 768) {
+        .heading h1 {
+          font-size: 45px;
+          margin-top: 45px;
+        }
+        .about {
+          margin: 0px;
+        }
+        .container {
+          width: 100%;
+          flex-direction: column;
+          margin: 0px;
+          padding: 0px 40px;
+        }
+        .about-content {
+          width: 100%;
+          margin: 35px;
+        }
+        .about-content h2 {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        .about-content button {
+          font-size: 16px;
+          padding: 8px 16px;
+        }
+        .about-image {
+          width: 100%;
+        }
+      }
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px);
+        }
+      }
+      @keyframes fadeInRight {
+        0% {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px);
+        }
+      }
+      @keyframes fadeInAndScale {
+        0% {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frogcoin</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <header>
+          <div class="logo"><img src="./logo/logo3.jpg" /></div>
+          <nav>
+            <ul class="navbar">
+              <li><a href="./frog.html">Home</a></li>
+              <li><a href="./about.html">About us</a></li>
+              <li><a href="./carrers.html">Carrer</a></li>
+              <li>
+                <a href="./security.html">Security Features</a>
+                <ul class="menu">
+                  <li><a href="#">Encryption</a></li>
+                  <li><a href="#"> Authentication (2FA)</a></li>
+                  <li><a href="#"> Wallets</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div>
+            <div class="headerright">
+              <div class="search">
+                <form
+                  action="https:www.google.com/search"
+                  method="get"
+                  class="search-bar"
+                >
+                  <input type="text" placeholder="search" name="q" />
+                  <button type="submit">
+                    <svg
+                      id="magglass"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+
+              <a href="./loginregester.html">
+                <button id="register" class="register" type="button">
+                  Register or Login
+                </button></a
+              >
+            </div>
+
+            <div class="social-media">
+              <a href="https://www.facebook.com/kamana.aley"
+                ><img src="./logo/facebook-2-logo-svgrepo-com.svg"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img src="./logo/instagram-1-svgrepo-com.svg"
+              /></a>
+              <a href="https://twitter.com/i/flow/login"
+                ><img src="./logo/twitter-3-logo-svgrepo-com.svg"
+              /></a>
+            </div>
+          </div>
+        </header>
+        <section class="about">
+          <div class="heading">
+            <h1>About us</h1>
+          </div>
+          <div class="container">
+            <div class="about-content">
+              <h2>Welcome To Our Website</h2>
+              <p>
+                At Frogcoin, we aim to revolutionize the way people interact
+                with and understand digital currency. Our mission is to provide
+                a seamless and secure platform for users to explore the
+                possibilities of decentralized finance.
+              </p>
+              <button class="cta-button">Learn More</button>
+            </div>
+            <div class="about-image">
+              <img src="./images/about img.jpg" />
+            </div>
+          </div>
+        </section>
+        <footer><p>&copy; 2023 Frogcoin. All rights reserved.</p></footer>
+      </body>
+    </html>
+  </body>
+</html>
